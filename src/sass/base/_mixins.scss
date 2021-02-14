@@ -1,0 +1,10 @@
+@mixin fontFW ($f, $w) {
+    font-family: $f;
+    font-weight: $w;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

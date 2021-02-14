@@ -1,0 +1,26 @@
+.header {
+    height: 100vh;
+    &__wrapper {
+    background-color: #e9eae2;
+
+    }
+    &__cube {
+        display: grid;
+        grid-template-columns: repeat(2, 50px);
+        grid-template-rows: repeat(2, 50px);
+        &-angle {
+            &--yellow {
+                background-color: #f8c255;
+            }
+            &--green {
+                background-color: #bfe79e;
+            }
+            &--red {
+                background-color: #ff9b6d;
+            }
+            &--blue {
+                background-color: #7dd5c9;
+            }
+        }
+    }
+}

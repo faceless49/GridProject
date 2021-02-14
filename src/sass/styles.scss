@@ -1,0 +1,23 @@
+@import './base/mixins';
+@import './base/variables';
+
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+html, body {
+    font-size: 10px;
+    overflow-x: hidden;
+  }
+
+@import './blocks/grid-app';
+@import './blocks/header';
+@import './blocks/title';
+@import './blocks/tea';
+@import './blocks/rooms';
+@import './blocks/shakers';
+@import './blocks/authentics';
+@import './blocks/footer';
