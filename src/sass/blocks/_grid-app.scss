@@ -1,4 +1,4 @@
 .grid-app {
     display: grid;
-    grid-template: 665px repeat(5, 380px) / 380px 1fr 380px;
+    grid-template: 665px 380px 330px repeat(3, 380px) / 380px 1fr 380px;
 }

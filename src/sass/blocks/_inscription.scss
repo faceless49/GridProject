@@ -1,0 +1,17 @@
+.inscription {
+    font-size: 2.1rem;
+    @include fontFW(Roboto, 300);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    &__subtitle {
+        font-size: 1.4rem;
+        display: block;
+         text-transform: uppercase;
+        @include fontFW(Roboto, 500);
+        &--tea {
+            color: #438a7e;
+        }
+    }
+}

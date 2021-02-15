@@ -1,23 +1,29 @@
 @import './base/mixins';
 @import './base/variables';
+@import './libs/normalize';
 
 
 
 * {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-family: $font-family, sans-serif;
+    font-weight: $font-weight;
 }
 
 html, body {
-    font-size: 10px;
+    font-size: $fz;
     overflow-x: hidden;
   }
 
+@import './libs/fonts';
 @import './blocks/grid-app';
-@import './blocks/header';
+@import './blocks/inscription';
+@import './blocks/author-cite';
 @import './blocks/title';
+@import './blocks/price';
+@import './blocks/cube';
+@import './blocks/header';
 @import './blocks/tea';
-@import './blocks/rooms';
+@import './blocks/room';
 @import './blocks/shakers';
 @import './blocks/authentics';
 @import './blocks/footer';

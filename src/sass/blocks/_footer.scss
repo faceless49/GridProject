@@ -1,0 +1,30 @@
+.footer {
+    position: relative;
+    background: url('../img/footer/bg.png') no-repeat;
+    background-size: cover;
+    grid-area: 6/1/7/4;
+    &__wrapper {
+        position: relative;
+    }
+    &__text {
+        color: #7c7a7a;
+        font-size: 1.6rem;
+        @include fontFW(Roboto, 300);
+        position: relative;
+    }
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, .79);
+    }
+    &__cube {
+        grid-template-columns: repeat(4, 24px);
+        grid-template-rows: repeat(2, 24px);
+        grid-auto-flow: column;
+    }
+    
+}

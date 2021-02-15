@@ -1,0 +1,14 @@
+.authentics {
+    &__collection {
+        background-color: #f8c255;
+        @include flexCenter;
+        flex-direction: column;
+    }
+    &__author {
+        @include flexCenter;
+        flex-direction: column;
+    }
+    &__item {
+        background: url('../img/authentics/bg.png') center center/cover no-repeat;
+    }
+}

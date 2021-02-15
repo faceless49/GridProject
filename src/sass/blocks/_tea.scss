@@ -1,0 +1,24 @@
+.tea {
+  &__collection {
+    background-color: #7dd5c9;
+    @include flexCenter;
+    flex-direction: column;
+  }
+  &__inscription {
+    color: #266258;
+    &-subtitle {
+      color: #438a7e;
+    }
+  }
+  &__item {
+    background-color: #f5f5f5;
+    background-image: url('../img/tea/bg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+  &__author {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+  }
+}

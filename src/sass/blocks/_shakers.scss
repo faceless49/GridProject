@@ -1,0 +1,19 @@
+.shakers {
+    &__item {
+        background-color: #f5f5f5;
+    }
+    &__author {
+        background-color: #f5f5f5;
+    }
+    &__inscription {
+        color: #586e47;
+        &-subtitle {
+            color: #7c9965;
+        }
+    }
+    &__collection {
+        background-color: #bfe79e;
+        @include flexCenter;
+        flex-direction: column;
+    }
+}
