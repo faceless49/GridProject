@@ -1,5 +1,6 @@
 .header {
     &__item {
+        display: flex;
         padding: 20px 0 0 20px;
         background-color: #e9eae2;
         background-image: url('../img/header/smallpepper.png');
@@ -14,6 +15,7 @@
         justify-content: center;
     }
     &__subtitle {
+        align-self: center;
         width: 225px;
         line-height: 37px;
     }
@@ -25,6 +27,7 @@
     }
     
     &__bar {
+        position: relative;
         background: url('../img/header/aside.png') center center/cover no-repeat;
     }
 }

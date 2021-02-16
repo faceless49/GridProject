@@ -3,14 +3,23 @@
     background: url('../img/footer/bg.png') no-repeat;
     background-size: cover;
     grid-area: 6/1/7/4;
+    display: flex;
+
     &__wrapper {
         position: relative;
+        padding: 0 125px 0 50px;
+        flex:1 1 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     &__text {
         color: #7c7a7a;
         font-size: 1.6rem;
         @include fontFW(Roboto, 300);
         position: relative;
+        margin: 0;
+        margin-top: 50px;
     }
     &:before {
         content: '';
@@ -22,9 +31,20 @@
         background: rgba(0, 0, 0, .79);
     }
     &__cube {
-        grid-template-columns: repeat(4, 24px);
-        grid-template-rows: repeat(2, 24px);
+        grid-template-columns: repeat(4, 50px);
+        grid-template-rows: repeat(2, 50px);
         grid-auto-flow: column;
     }
-    
+    &__right {
+        @include flexCenter;
+        flex-direction: column;
+    }
+    &__store {
+        color: #a7a2a2;
+        font-size: 3rem;
+        @include fontFW(Roboto,300);
+    }
+    &__img+&__img{             // ! +  next element (элементу идущему за текстом задается маржин
+        margin-left: 50px; /* @FIXME: Combo wombo */
+    }
 }

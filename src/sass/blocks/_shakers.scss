@@ -1,19 +1,30 @@
 .shakers {
-    &__item {
-        background-color: #f5f5f5;
+  &__item {
+    padding: 50px 0 0 55px;
+    background-color: #f5f5f5;
+  }
+  &__author {
+    padding: 70px 90px 0 0;
+    background-color: #f5f5f5;
+    background-image: url('../img/shakers/bg.png');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__inscription {
+    color: #586e47;
+    &-subtitle {
+      color: #7c9965;
     }
-    &__author {
-        background-color: #f5f5f5;
-    }
-    &__inscription {
-        color: #586e47;
-        &-subtitle {
-            color: #7c9965;
-        }
-    }
-    &__collection {
-        background-color: #bfe79e;
-        @include flexCenter;
-        flex-direction: column;
-    }
+  }
+  &__collection {
+    background-color: #bfe79e;
+    @include flexCenter;
+    flex-direction: column;
+  }
+  &__title {
+      width: 200px;
+  }
 }

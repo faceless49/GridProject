@@ -9,6 +9,13 @@
         flex-direction: column;
     }
     &__item {
+        padding: 60px 0 0 50px;
         background: url('../img/authentics/bg.png') center center/cover no-repeat;
+    }
+    &__inscription {
+        color: #785e28;
+        &-subtitle {
+            color: #ae883b;
+        }
     }
 }
