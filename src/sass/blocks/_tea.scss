@@ -3,24 +3,26 @@
     background-color: #f5f5f5;
     @include flexCenter;
     flex-direction: column;
+    background-image: url(../img/tea/bgtooth.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+//     background-image: linear-gradient(rgba(125,213,201,1), rgba(125,213,201,1)),
+//     linear-gradient(45deg, rgba(125,213,201,1) 50.5%, rgba(125,213,201,0) 50.5%),
+//     linear-gradient(-45deg, rgba(125,213,201, 0) 50.5%, rgba(125,213,201,1) 50.5%);
 
-    background-image: linear-gradient(rgba(125,213,201,1), rgba(125,213,201,1)),
-    linear-gradient(45deg, rgba(125,213,201,1) 50.5%, rgba(125,213,201,0) 50.5%),
-    linear-gradient(-45deg, rgba(125,213,201, 0) 50.5%, rgba(125,213,201,1) 50.5%);
 
-
-    background-repeat: repeat-y, repeat-y;
-background-position: 350px 0, 350px 0;  /*  начинаем не с обрезанного угла  */
-background-size: 20px 20px, 20px 20px;
-border-right: 10px solid transparent;  /*  подготовим место под зубчики  */
-background-image: linear-gradient(rgba(125,213,201,1), rgba(125,213,201,1)),
-    linear-gradient(45deg, rgba(125,213,201,1) 50.5%, rgba(125,213,201,0) 50.5%),
-    linear-gradient(-45deg, rgba(125,213,201, 0) 50.5%, rgba(125,213,201,1) 50.5%);
-background-repeat: repeat, repeat-y, repeat-y;
-background-position: 0 0, 350px 0, 350px 0;
-background-size: auto auto, 40px 20px, 40px 20px;
-background-clip: padding-box, border-box, border-box;  /*  обрезаем края у общей заливки  */
-background-origin: padding-box, border-box, border-box, border-box, border-box;  /*  позиционируем зубцы относительно верхней границы, а фон относительно внутреннего отступа  */
+//     background-repeat: repeat-y, repeat-y;
+// background-position: 350px 0, 350px 0;  /*  начинаем не с обрезанного угла  */
+// background-size: 20px 20px, 20px 20px;
+// border-right: 10px solid transparent;  /*  подготовим место под зубчики  */
+// background-image: linear-gradient(rgba(125,213,201,1), rgba(125,213,201,1)),
+//     linear-gradient(45deg, rgba(125,213,201,1) 50.5%, rgba(125,213,201,0) 50.5%),
+//     linear-gradient(-45deg, rgba(125,213,201, 0) 50.5%, rgba(125,213,201,1) 50.5%);
+// background-repeat: repeat, repeat-y, repeat-y;
+// background-position: 0 0, 350px 0, 350px 0;
+// background-size: auto auto, 40px 20px, 40px 20px;
+// background-clip: padding-box, border-box, border-box;  /*  обрезаем края у общей заливки  */
+// background-origin: padding-box, border-box, border-box, border-box, border-box;  /*  позиционируем зубцы относительно верхней границы, а фон относительно внутреннего отступа  */
   }
   &__inscription {
     color: #266258;
@@ -29,6 +31,7 @@ background-origin: padding-box, border-box, border-box, border-box, border-box; 
     }
   }
   &__item {
+    padding: 50px 0 0 50px;
     background-color: #f5f5f5;
     background-image: url('../img/tea/bg.png');
     background-repeat: no-repeat;

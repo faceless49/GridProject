@@ -27,6 +27,23 @@
     }
     
     &__bar {
+        @include flexCenter;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: -55px;
+        &-icon {
+            cursor: pointer;
+        }
+    }
+    &__nav-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        @include flexCenter;
+        flex-direction:column;
+    }
+    &__aside {
         position: relative;
         background: url('../img/header/aside.png') center center/cover no-repeat;
     }
