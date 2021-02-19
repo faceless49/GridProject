@@ -3,8 +3,7 @@
     background-size: cover;
     grid-area: 3/1/4/span 3;
     display: grid;
-    grid-template: 1fr / 380px 1fr 380px;
-    @include flexCenter;
+    grid-template-columns: 380px 1fr 380px;
     &__circle {
         @include flexCenter;
         flex-direction: column;
@@ -14,6 +13,7 @@
         background-color: #f5f5f5;
         font-size: 1.6rem;
         grid-area: 1/2;
+        margin: 78px 0 0 110px;
     }
 
     &__text {

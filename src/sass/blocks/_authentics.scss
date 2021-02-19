@@ -1,21 +1,25 @@
 .authentics {
-    &__collection {
-        background-color: #f8c255;
-        @include flexCenter;
-        flex-direction: column;
+  &__collection {
+    background-color: #fff;
+    @include flexCenter;
+    flex-direction: column;
+    background-image: url(../img/authentics/bgshaker.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__author {
+    padding: 25px 0 25px 0;
+    @include flexCenter;
+    flex-direction: column;
+  }
+  &__item {
+    padding: 60px 0 0 50px;
+    background: url("../img/authentics/bg.png") center center/cover no-repeat;
+  }
+  &__inscription {
+    color: #785e28;
+    &-subtitle {
+      color: #ae883b;
     }
-    &__author {
-        @include flexCenter;
-        flex-direction: column;
-    }
-    &__item {
-        padding: 60px 0 0 50px;
-        background: url('../img/authentics/bg.png') center center/cover no-repeat;
-    }
-    &__inscription {
-        color: #785e28;
-        &-subtitle {
-            color: #ae883b;
-        }
-    }
+  }
 }

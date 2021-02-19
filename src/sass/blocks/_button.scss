@@ -1,3 +1,29 @@
 .btn {
+    @include flexCenter;
     margin-top: 40px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+
+    &-text {
+        @include fontFW(Ginora,300);
+        font-size: 1.9rem;
+        color: #c5c5c5;
+        padding-left: 5px;
+        &:hover {
+            color: #868383;
+            }
+        }
+        &-like {
+            &:hover {
+                fill: #868383;
+
+            }
+        }
+.liked {
+    fill: #fa857b;
 }
+}
+

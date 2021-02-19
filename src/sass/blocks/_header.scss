@@ -1,9 +1,15 @@
 .header {
+  &__item-wrapper {
+    grid-area: 1/span 2;
+    padding: 150px 150px 215px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(../img/header/img1.png) 30% 100% no-repeat ;
+    background-color: #e9eae2;
+  }
   &__item {
     display: flex;
-    padding: 20px 0 0 20px;
-    background-color: #e9eae2;
-    background-image: url("../img/header/smallpepper.png");
     background-repeat: no-repeat;
     background-position: right;
   }
@@ -36,7 +42,6 @@
       padding: 10px;
       cursor: pointer;
       position: relative;
-
     }
   }
   &__nav-list {
@@ -49,5 +54,8 @@
   &__aside {
     position: relative;
     background: url("../img/header/aside.png") center center/cover no-repeat;
+  }
+  &__cube {
+    align-self: flex-start;
   }
 }

@@ -1,10 +1,10 @@
 .shakers {
   &__item {
-    padding: 50px 0 0 55px;
+    padding: 40px 0 0 55px;
     background-color: #f5f5f5;
   }
   &__author {
-    padding: 70px 90px 0 0;
+    padding: 70px 90px 40px 0;
     background-color: #f5f5f5;
     background-image: url('../img/shakers/bg.png');
     background-position: bottom left;
@@ -20,9 +20,12 @@
     }
   }
   &__collection {
-    background-color: #bfe79e;
     @include flexCenter;
-    flex-direction: column;
+    flex-direction: column;    
+    background-color: #f5f5f5;
+    background-image: url(../img/shakers/shakerbg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   &__title {
       width: 200px;
