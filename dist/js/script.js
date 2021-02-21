@@ -4,6 +4,7 @@ let btnText = document.querySelector('.btn-text');
 likeBtn.addEventListener('click', function() {
      likeBtn.classList.toggle('liked');
 });
+<<<<<<< HEAD
  */
 
 
@@ -30,3 +31,5 @@ const swiper = new Swiper('.image-slider', {
        el: '.swiper-scrollbar',
      },
    });
+=======
+>>>>>>> f77a40b5614f2de4034dff85db46afb4f34c6fb8

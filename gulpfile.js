@@ -34,7 +34,11 @@ gulp.task('watch', function() {
     gulp.watch("src/js/**/*.js").on('change', gulp.parallel('scripts'));
     gulp.watch("src/fonts/**/*").on('all', gulp.parallel('fonts'));
     gulp.watch("src/icons/**/*").on('all', gulp.parallel('icons'));
+<<<<<<< HEAD
     gulp.watch("src/img/**/*").on('all', gulp.parallel('images'))
+=======
+    gulp.watch("src/img/**/*").on('all', gulp.parallel('images'));
+>>>>>>> f77a40b5614f2de4034dff85db46afb4f34c6fb8
 
 });
 
