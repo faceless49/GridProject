@@ -9,7 +9,7 @@
 .navigation-wrapper {
   position: relative;
   background-color: rgba(20, 32, 56, 0.9); /* 1.0 - непрозрачный */
-
+  padding-top: 85px;
 }
 
 // * ======== Menu
@@ -23,93 +23,101 @@
 }
 
 .menu__item {
-    @include flexCenter;
+  @include flexCenter;
   flex-direction: column;
 }
 .menu__subtitle {
-@include fontFW(Roboto,900);
-font-size: 1.6rem;
-line-height: 1.2;
-color: $menu-color;
-margin: 0;
-padding: 0;
-margin-top: 20px;
+  @include fontFW(Roboto, 900);
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: $menu-color;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
 }
 
 .header__navigation-title {
-    grid-area: 1/1/2/span 2;
-    @include fontFW(Roboto,400);
-    font-size: 1.8rem;
-    line-height: 1.2;
-    color: #979797;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 0;
-    padding: 85px 0 0 35px;
+  grid-area: 1/1/2 / span 2;
+  @include fontFW(Roboto, 400);
+  font-size: 1.8rem;
+  line-height: 1.2;
+  color: #979797;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding: 85px 0 0 35px;
 }
 
-
 .header__close-wrapper {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
   position: absolute;
   top: 30px;
   right: 30px;
-    align-items: flex-start;
+  align-items: flex-start;
 }
-.close-container{
+
+
+// * ============== Close Btn
+
+
+.close-container {
   position: relative;
   z-index: 100;
   @include flexCenter;
   cursor: pointer;
-
 }
 
-.leftright{
+.leftright {
   height: 1px;
   width: 20px;
   position: absolute;
   background-color: $menu-color;
   border-radius: 2px;
   transform: rotate(45deg);
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
-.rightleft{
+.rightleft {
   height: 1px;
   width: 20px;
   position: absolute;
   background-color: $menu-color;
   border-radius: 2px;
   transform: rotate(-45deg);
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
-label{
+label {
   color: $menu-color;
   @include fontFW(Roboto, 300);
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
   opacity: 0;
 }
-.close{
+.close {
   margin: 60px 0 0 5px;
   position: absolute;
 }
 
-.close-container:hover .leftright{
+.close-container:hover .leftright {
   transform: rotate(-45deg);
   background-color: #f8c255;
 }
-.close-container:hover .rightleft{
+.close-container:hover .rightleft {
   transform: rotate(45deg);
   background-color: #f8c255;
 }
-.close-container:hover label{
+.close-container:hover label {
   opacity: 1;
 }
+
+
+// * ============ Aside
+
+
 
 
 .header__bar-link {
@@ -117,7 +125,7 @@ label{
   overflow: hidden;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 50px;
