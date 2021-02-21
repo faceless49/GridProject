@@ -4,15 +4,21 @@
     padding: 150px 150px 215px 50px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background: url(../img/header/img1.png) 30% 100% no-repeat ;
     background-color: #e9eae2;
+    position: relative;
+    &:before {
+      content: '';
+      background: url('../img/header/shape1.svg') no-repeat;
+      position: absolute;
+      top: 0;
+      left: 215px;
+      width: 345px;
+      height: 285px;
+      opacity: 0.8;
+    }
   }
-  &__item {
-    display: flex;
-    background-repeat: no-repeat;
-    background-position: right;
-  }
+
   &__author {
     background-color: #e9eae2;
     display: flex;
@@ -21,7 +27,8 @@
     justify-content: center;
   }
   &__subtitle {
-    align-self: center;
+    margin-top: 70px;
+
     width: 225px;
     line-height: 37px;
   }
@@ -60,4 +67,5 @@
     top: 15px;
     left: 20px;
 }
+
   }

@@ -1,0 +1,32 @@
+.image-slider {
+	padding: 30px 0 70px 0;
+    position: absolute;
+    top: 40px;
+    width: 100px;
+    left: 340px;
+}
+.image-slider__wrapper {
+}
+.image-slider__slide {
+}
+.image-slider__image {
+	text-align: center;
+}
+.image-slider__image img {
+	max-width: 100%;
+}
+
+
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 15px;
+    color: #c2942b;
+}
+.swiper-button-prev {
+    left: 0;
+    top: 40%;
+}
+
+.swiper-button-next {
+    top: 40%;
+    right: 0;
+}

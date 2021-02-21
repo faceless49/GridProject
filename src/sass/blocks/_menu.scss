@@ -7,9 +7,13 @@
   position: relative;
 }
 .navigation-wrapper {
-  position: relative;
   background-color: rgba(20, 32, 56, 0.9); /* 1.0 - непрозрачный */
   padding-top: 85px;
+  padding-bottom: 100px;
+  transition: 0.7s;
+  top: 0;
+  z-index: 9999;
+  transform: translateX(110%)
 }
 
 // * ======== Menu
